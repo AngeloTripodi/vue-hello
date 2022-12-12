@@ -15,10 +15,18 @@
 
     
         <div class="container">
-            <div class="row">
+            <div class="row" :class="myClass">
                 <div class="col-12">
                     <h1>{{text}}</h1>
-                    <img :src="src" alt="">
+                    <img :class="myImgClass" :src="src" :alt="alt">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Class Maker:</h3>
+                    <input type="text" v-model="myClass">
+                    <input type="button" value="cliccami" @click="calc(2,2)">
+                    <p>{{calc(88,67)}}</p>
                 </div>
             </div>
         </div>
