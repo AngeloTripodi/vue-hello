@@ -29,6 +29,14 @@
                     <p>{{calc(88,67)}}</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>Sum:</h3>
+                    <input type="text" v-model="numeroUno">
+                    <input type="text" v-model="numeroDue">
+                    <input type="button" value="calcola" @click="calc(parseInt(numeroUno),parseInt(numeroDue))">
+                </div>
+            </div>
         </div>
 
     </div>

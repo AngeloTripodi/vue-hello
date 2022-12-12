@@ -8,6 +8,8 @@ createApp({
             myClass : " ",
             myImgClass : "w-25",
             alt : "Vue Logo",
+            numeroUno : " ",
+            numeroDue : " ",
         }
     },
     methods :{
@@ -18,7 +20,6 @@ createApp({
             sum = num1 + num2;
             console.log(sum)
             return sum;
-            
         }
     }
 }).mount('#app')
